@@ -64,5 +64,146 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-prereason-com is a company surfaced via the API Evangelist harvest backlog (source: mcp-registry) and added to the network as a stub for full-pipeline profiling.
-- https://prereason.com/
+PreReason provides a Financial Market Context API and MCP server designed for AI agents. It delivers macroeconomic, rates, bonds, FX, commodities, company and Bitcoin data in a single briefing, including interpreted trends, momentum, percentile rankings, cross‑asset correlations and regime classification. Each figure is dated, sourced, and available as markdown or JSON, enabling seamless integration with LLMs and agent frameworks.
+
+**Areas:** Financial · Market · API · AI · Data · MCP
+
+## prereason-com on APIs.io
+
+Everything profiled for prereason-com is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/prereason-com/](https://apis.io/providers/prereason-com/)** — or go straight to one of the APIs or properties below.
+
+### APIs (8)
+
+- [prereason-com Agent access API](https://apis.io/apis/prereason-com/prereason-com-agent-access-api/) — How an agent with no key gets one from inside its own session. The agent creates a claim, shows one link to the human who owns it, and polls until the human…
+- [prereason-com Company Briefings API](https://apis.io/apis/prereason-com/prereason-com-company-briefings-api/) — One listed company's briefing bought per call, whole or one block at a time, for a company of a market that is live. A key reads the same briefing through…
+- [prereason-com Context API](https://apis.io/apis/prereason-com/prereason-com-context-api/) — Briefing-based context endpoints. The primary way to consume PreReason data. Each briefing bundles related metrics with trend analysis and confidence scores.
+- [prereason-com Metrics API](https://apis.io/apis/prereason-com/prereason-com-metrics-api/) — Individual metric data with trend analysis and interpretation
+- [prereason-com Short URLs API](https://apis.io/apis/prereason-com/prereason-com-short-urls-api/) — Convenience aliases that forward to context briefings. Same auth, same response. Use these for quick access or human-friendly URLs.
+- [prereason-com System API](https://apis.io/apis/prereason-com/prereason-com-system-api/) — Health, status, and version endpoints
+- [prereason-com Treasury Holdings API](https://apis.io/apis/prereason-com/prereason-com-treasury-holdings-api/) — Per-company corporate Bitcoin treasury holdings with provenance. The btc.treasury briefing interprets and ranks the top holders; these endpoints are the…
+- [prereason-com Webhooks API](https://apis.io/apis/prereason-com/prereason-com-webhooks-api/) — Change events, pushed by webhook to an account's registered addresses or read from the feed. What changed since a cursor: a live briefing's state label, a…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Prereason Com Agentic Access](https://apis.io/agentic-access/prereason-com/prereason-com-agentic-access/)
+
+#### JSON Schema (4)
+
+The data models the API reads and writes.
+
+- [MetricData](https://apis.io/schemas/prereason-com/prereason-com-metric-data/)
+- [MetricLateRelease](https://apis.io/schemas/prereason-com/prereason-com-metric-late-release/)
+- [MetricLatestReading](https://apis.io/schemas/prereason-com/prereason-com-metric-latest-reading/)
+- [MetricListResponse](https://apis.io/schemas/prereason-com/prereason-com-metric-list-response/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Prereason Com Context](https://apis.io/jsonld/prereason-com/prereason-com-context/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Prereason Com Openapi Overlay](https://apis.io/overlays/prereason-com/prereason-com-openapi-overlay/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [prereason-com API Rules](https://apis.io/rules/prereason-com/prereason-com-rules/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Prereason Com Authentication](https://apis.io/security/prereason-com/prereason-com-authentication/)
+- [Prereason Com Domain Security](https://apis.io/security/prereason-com/prereason-com-domain-security/)
+- [Prereason Com Vulnerability Disclosure](https://apis.io/security/prereason-com/prereason-com-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Prereason Com Plans Pricing](https://apis.io/plans/prereason-com/prereason-com-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Prereason Com Rate Limits](https://apis.io/rate-limits/prereason-com/prereason-com-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://prereason.com/)
+- [Documentation](https://www.prereason.com/docs)
+- [API reference](https://www.prereason.com/api/openapi/spec.json)
+- [Pricing](https://www.prereason.com/pricing)
+- [Sign up](https://www.prereason.com/signup)
+- [Terms of service](https://www.prereason.com/terms)
+- [Privacy policy](https://www.prereason.com/privacy)
+- [GitHub](https://github.com/PreReason)
+
+## API Evangelist rating
+
+**Kin Score 61.4** — strong · rubric 0.25.0 · scored 2026-10-31
+
+| Facet | Score |
+|---|---|
+| Discoverability | 56.7 |
+| Contract quality | 62.0 |
+| Contract governance | 79.1 |
+| Operational transparency | 44.2 |
+| Developer ergonomics | 42.1 |
+| Access clarity | 73.2 |
+
+**Agent readiness 62.5** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | unknown |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | verified |
+| Event Surface Described | — |
+| Agent Skills | unknown |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | conformant |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | paginated |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 28.2** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/prereason-com/](https://apis.io/providers/prereason-com/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for prereason-com: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/prereason-com/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
